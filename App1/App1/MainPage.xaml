@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+
+        <Label Text="Welcome to Xamarin.Forms! Hello Word!" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+
+        <Entry Text="I am an Entry" />
+
+        <Editor Text="I am an Editor" />
+
+        <Image Source="icon.png" />
+
+        <Button Text="Click to Rotate Text!" />
+
+        <Slider Maximum="100" />
+
+        <TimePicker />
+
+        <DatePicker />
+
+        <Picker Title="Select a monkey">
+            <Picker.Items>
+                <x:String>Baboon</x:String>
+                <x:String>Capuchin Monkey</x:String>
+                <x:String>Blue Monkey</x:String>
+                <x:String>Squirrel Monkey</x:String>
+                <x:String>Golden Lion Tamarin</x:String>
+                <x:String>Howler Monkey</x:String>
+                <x:String>Japanese Macaque</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="Ring">
+                    <SwitchCell Text="New Voice Mail" />
+                    <SwitchCell Text="New Mail" On="true" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+    </StackLayout>
+
+</ContentPage>
